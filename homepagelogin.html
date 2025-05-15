@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheda Bianca - Benvenuto</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: transparent;
+            text-align: center;
+            padding: 20px;
+            font-size: 3em;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 4px 4px 8px #000;
+            z-index: 10;
+        }
+        .nav {
+            position: fixed;
+            top: 20px;
+            width: 100%;
+            z-index: 15;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+        .nav a {
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.5em;
+            text-shadow: 2px 2px 4px #00BFFF;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        .nav a:hover {
+            color: #00BFFF;
+            text-shadow: 0px 0px 10px #00BFFF, 0px 0px 20px #00BFFF;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            margin-top: 100px;
+        }
+        .verde {
+            background-color: #008000;
+            flex: 0.4;
+            position: relative;
+            overflow: hidden;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.5em;
+            text-shadow: 2px 2px 4px #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .italia {
+            width: 80%;
+            margin-top: 20px;
+            object-fit: contain;
+            z-index: 2;
+        }
+        .contatore {
+            font-size: 2em;
+            margin-bottom: 20px;
+            z-index: 3;
+            animation: pulse 1.5s infinite alternate;
+            color: #00FF00;
+            text-shadow: 0px 0px 10px #00FF00, 0px 0px 20px #00FF00;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); text-shadow: 0px 0px 10px #00FF00, 0px 0px 20px #00FF00; }
+            100% { transform: scale(1.1); text-shadow: 0px 0px 20px #00FF00, 0px 0px 40px #00FF00; }
+        }
+        .bianco {
+            background-color: #ffffff;
+            color: #000;
+            flex: 0.6;
+            padding: 40px;
+            overflow-y: auto;
+            text-align: center;
+        }
+        .message-box {
+            background-color: #f4f4f4;
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 30px;
+            box-shadow: 0px 0px 20px #ccc;
+            width: 90%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .rosso {
+            background-color: #ff0000;
+            flex: 0.4;
+            position: relative;
+            padding: 20px;
+            color: #ffffff;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.5em;
+            font-size: 1.2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .delete-button {
+            background-color: #ffffff;
+            color: #ff0000;
+            font-weight: bold;
+            padding: 15px 40px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            margin-top: 20px;
+            transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+            text-transform: uppercase;
+            animation: pulse 1.5s infinite alternate;
+        }
+        .delete-button:hover {
+            background-color: #ff0000;
+            color: #ffffff;
+            box-shadow: 0px 0px 20px #ff0000, 0px 0px 40px #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Scheda Bianca</div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="profilo.html">Profilo</a>
+    </div>
+    <div class="container">
+        <div class="verde">
+            <div class="contatore">
+                Totale iscritti: <strong>12345</strong>
+            </div>
+            <img src="https://i.postimg.cc/FY200gjW/Chat-GPT-Image-12-mag-2025-20-22-45.png" alt="Italia" class="italia">
+        </div>
+        <div class="bianco">
+            <div class="welcome-message" style="font-size: 2.5em; margin-bottom: 30px;">
+                Benvenuto nel Movimento Scheda Bianca, Mario Rossi!
+            </div>
+            <div class="message-box">
+                <h2>SCHEDA BIANCA</h2>
+                <p>Facci sapere le tue idee, pensieri, proposte...</p>
+                <textarea rows="5" placeholder="Scrivi qui le tue idee..." style="width: 100%; padding: 15px; font-size: 1.2em; margin-bottom: 20px; border-radius: 10px; border: 2px solid #ddd;"></textarea><br>
+                <button style="background-color: #008000; color: #ffffff; padding: 15px 40px; font-size: 1.5em; border: none; border-radius: 50px; cursor: pointer; transition: background-color 0.3s;">Invia Messaggio</button>
+            </div>
+        </div>
+        <div class="rosso">
+            <p>Non vuoi più far parte di questa rivoluzione?</p>
+            <p>Se non sei pronto, possiamo capire le difficoltà e la paura che si ha nel destabilizzare un paese, non è facile, ma siamo fermamente convinti che questa politica è finita e che uniti possiamo risollevare il Bel Paese.</p>
+            <p>Occhio perchè PARLAno e MENTOno.</p>
+            <p>Buona fortuna fuori dalla rivoluzione.</p>
+            <button class="delete-button" onclick="deleteAccount()">Rientra in PARLA MENTO</button>
+        </div>
+    </div>
+</body>
+</html>

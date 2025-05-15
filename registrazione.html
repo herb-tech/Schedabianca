@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheda Bianca - Registrazione</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: transparent;
+            text-align: center;
+            padding: 20px;
+            font-size: 3em;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 4px 4px 8px #000;
+            z-index: 10;
+        }
+        .nav {
+            position: fixed;
+            top: 20px;
+            width: 100%;
+            z-index: 15;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+        .nav a {
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-shadow: 2px 2px 4px #000;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        .nav a:hover {
+            color: #00ffff;
+            text-shadow: 0px 0px 10px #00ffff, 0px 0px 20px #00ffff;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            margin-top: 100px;
+        }
+        .verde {
+            background-color: #008000;
+            flex: 0.4;
+            position: relative;
+            overflow: hidden;
+        }
+        .bianco {
+            background-color: #ffffff;
+            color: #000;
+            flex: 0.6;
+            padding: 40px;
+            overflow-y: auto;
+            text-align: center;
+        }
+        .rosso {
+            background-color: #ff0000;
+            flex: 0.4;
+        }
+        .button-container {
+            margin-top: 40px;
+        }
+        .auth-button {
+            background-color: #008000;
+            color: #ffffff;
+            font-size: 1.5em;
+            padding: 15px 40px;
+            margin: 20px auto;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 0px 0px 20px #008000, 0px 0px 40px #008000;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-transform: uppercase;
+            display: block;
+            width: 70%;
+            max-width: 300px;
+            text-align: center;
+        }
+        .auth-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 40px #00ff00, 0px 0px 80px #00ff00;
+        }
+        .success-message {
+            display: none;
+            color: #008000;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="login.html">Accedi / Registrati</a>
+    </div>
+    
+    <div class="header">Scheda Bianca</div>
+    
+    <div class="container">
+        <div class="verde"></div>
+        
+        <div class="bianco">
+            <h2>Scegli il tuo metodo di autenticazione</h2>
+            
+            <div class="button-container">
+                <button class="auth-button" onclick="registerUser('SPID')">SPID</button>
+                <button class="auth-button" onclick="registerUser('CIE')">CIE</button>
+                <button class="auth-button" onclick="registerUser('CNS')">CNS</button>
+            </div>
+            
+            <div class="success-message" id="success-message">
+                🎉 Grazie per esserti unito a Scheda Bianca 4.0! Sei ora parte della rivoluzione.
+            </div>
+        </div>
+        
+        <div class="rosso"></div>
+    </div>
+
+    <script>
+        function registerUser(method) {
+            // Simula l'autenticazione
+            alert("Registrazione completata con " + method + "!");
+            document.getElementById("success-message").style.display = "block";
+        }
+    </script>
+</body>
+</html>

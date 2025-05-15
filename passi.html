@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheda Bianca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <title>Scheda Bianca - Adesione</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: transparent;
+            text-align: center;
+            padding: 20px;
+            font-size: 3em;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 4px 4px 8px #000;
+            z-index: 10;
+        }
+        .nav {
+            position: fixed;
+            top: 20px;
+            width: 100%;
+            z-index: 15;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+        .nav a {
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-shadow: 2px 2px 4px #000;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        .nav a:hover {
+            color: #00ffff;
+            text-shadow: 0px 0px 10px #00ffff, 0px 0px 20px #00ffff;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            margin-top: 100px;
+        }
+        .verde {
+            background-color: #008000;
+            flex: 0.4;
+            position: relative;
+            overflow: hidden;
+        }
+        .bianco {
+            background-color: #ffffff;
+            color: #000;
+            flex: 0.6;
+            padding: 40px;
+            overflow-y: auto;
+            text-align: center;
+        }
+        .rosso {
+            background-color: #ff0000;
+            flex: 0.4;
+        }
+        .content {
+            font-size: 1.4em;
+            line-height: 1.8em;
+            color: #000;
+            text-align: center;
+        }
+        .step {
+            margin: 30px 0;
+            font-size: 1.5em;
+            color: #008000;
+            text-shadow: 0px 0px 10px #008000, 0px 0px 20px #008000, 0px 0px 30px #008000;
+            animation: pulse 1.5s infinite alternate;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+        .cta-button {
+            background-color: #008000;
+            color: #ffffff;
+            font-size: 2em;
+            padding: 20px 60px;
+            margin: 40px auto;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 0px 0px 20px #008000, 0px 0px 40px #008000;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-transform: uppercase;
+            animation: cta-glow 1.5s infinite alternate;
+        }
+        .cta-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 40px #00ff00, 0px 0px 80px #00ff00;
+        }
+        @keyframes cta-glow {
+            0% { box-shadow: 0px 0px 20px #008000, 0px 0px 40px #008000; }
+            100% { box-shadow: 0px 0px 40px #00ff00, 0px 0px 80px #00ff00; }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="login.html">Accedi / Registrati</a>
+    </div>
+    
+    <div class="header">Scheda Bianca</div>
+    
+    <div class="container">
+        <div class="verde"></div>
+        
+        <div class="bianco">
+            <h2>Unisciti alla Rivoluzione della Scheda Bianca 4.0</h2>
+            
+            <div class="content">
+                <p>Siamo il popolo 4.0 che riprende il controllo.</p>
+                <p>Se vuoi cambiare veramente, se sei stanco di accettare sempre il meno peggio, allora segui questi 3 passi:</p>
+
+                <div class="step">1️⃣ Porta almeno una persona a visionare questa protesta. Parla con amici, familiari, colleghi. Se ci credi l'effetto valanga inizia da te.</div>
+                <div class="step">2️⃣ Vota scheda bianca alle prossime elezioni.</div>
+                <div class="step">3️⃣ Unisciti a noi. Registrati con SPID, CIE o CNS e rimani aggiornato diventando parte integrante della rivoluzione.</div>
+
+                <!-- Pulsante di Call to Action -->
+                <button class="cta-button" onclick="window.location.href='registrazione.html'">Tocca a Te</button>
+            </div>
+        </div>
+        
+        <div class="rosso"></div>
+    </div>
+</body>
+</html>

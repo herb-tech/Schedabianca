@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheda Bianca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <title>Scheda Bianca - La Soluzione</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: transparent;
+            text-align: center;
+            padding: 20px;
+            font-size: 3em;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 4px 4px 8px #000;
+            z-index: 10;
+        }
+        .nav {
+            position: fixed;
+            top: 20px;
+            width: 100%;
+            z-index: 15;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+        .nav a {
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-shadow: 2px 2px 4px #000;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        .nav a:hover {
+            color: #00ffff;
+            text-shadow: 0px 0px 10px #00ffff, 0px 0px 20px #00ffff;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            margin-top: 100px;
+        }
+        .verde {
+            background-color: #008000;
+            flex: 0.4;
+            position: relative;
+            overflow: hidden;
+        }
+        .bianco {
+            background-color: #ffffff;
+            color: #000;
+            flex: 0.6;
+            padding: 40px;
+            overflow-y: auto;
+            text-align: center;
+        }
+        .rosso {
+            background-color: #ff0000;
+            flex: 0.4;
+        }
+        .content {
+            font-size: 1.4em;
+            line-height: 1.8em;
+            color: #000;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 2em;
+            color: #008000;
+            margin: 20px 0;
+            animation: flicker 1.2s infinite alternate;
+            text-shadow: 0px 0px 10px #008000, 0px 0px 20px #008000, 0px 0px 30px #008000;
+        }
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        .highlight {
+            font-weight: bold;
+            color: #008000;
+            animation: pulse 1.5s infinite alternate;
+            text-align: center;
+            text-shadow: 0px 0px 10px #008000, 0px 0px 20px #008000, 0px 0px 30px #008000;
+        }
+        .final-button {
+            background-color: #008000;
+            color: #ffffff;
+            font-size: 1.5em;
+            padding: 20px 40px;
+            margin: 40px auto;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px #008000, 0px 0px 40px #008000;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-transform: uppercase;
+            animation: pulse 1.5s infinite alternate;
+        }
+        .final-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 30px #008000, 0px 0px 60px #008000;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="login.html">Accedi / Registrati</a>
+    </div>
+    
+    <div class="header">Scheda Bianca</div>
+    
+    <div class="container">
+        <div class="verde"></div>
+        
+        <div class="bianco">
+            <h2>La Soluzione</h2>
+            
+            <div class="content">
+                <p>
+                    **Bisogna ridare il potere al popolo.** Per fortuna, i nostri avi avevano già pensato a questo: una soluzione chiara e potente per garantire una democrazia reale. Non servono bombe, servono idee, coraggio e competenza.
+                </p>
+                
+                <p>
+                    La politica non è per chiunque. È per chi sa governare, per chi ha visione e coraggio. È per chi vuole davvero cambiare le cose, per chi ha il merito e le competenze per farlo. È per chi sa ascoltare il popolo e parlare almeno l'inglese.
+                </p>
+
+                <h2>LA NOSTRA PROPOSTA:</h2>
+                
+                <ul style="text-align: left; margin: 0 auto; display: inline-block;">
+                    <li><strong>Abrogare il Rosatellum</strong> – Questa legge ha fallito. È stata creata per proteggere i partiti, dare lavori inutili e non per rappresentare i cittadini. Basta giochi di potere, basta coalizioni di comodo. È tempo di dare il potere al popolo, non ai partiti.</li>
+                    <li><strong>Una nuova legge elettorale</strong> – Un sistema che metta davvero i cittadini al centro, con una piattaforma online trasparente e accessibile per votare, in tutta Italia. Un sistema in cui ogni voto conti davvero, senza trucchi, senza accordi di palazzo, senza poltrone garantite.</li>
+                    <li><strong>Referendum su temi cruciali</strong> – Vogliamo che le grandi decisioni tornino nelle mani del popolo. Ad esempio, decidere se restare nell'euro o uscirne, come la Svizzera ha fatto con la propria moneta. Non possiamo permettere che pochi decidano per tutti su questioni così importanti. Non possiamo essere costretti a scegliere sempre il meno peggio.</li>
+                    <li><strong>La scheda bianca come protesta</strong> – Non è più tempo di stare zitti. Votare scheda bianca non è disinteresse, è una dichiarazione di sfiducia verso un sistema che non ci rappresenta più. È una protesta, un segnale forte che dice: "Non accettiamo più questo gioco".</li>
+                </ul>
+                
+                <p class="highlight">Da oggi, grazie a questo movimento, una scheda bianca è un voto che parla e denuncia. Votare scheda bianca è un atto di speranza e di discontinuità con il passato. È il primo passo verso un futuro diverso. Insieme possiamo cambiare, uniti siamo il potere. Se sei pronto a conoscerci meglio e lo sei per questa protesta, i prossimi 3 passi da fare toccano a te.</p>
+
+                <!-- Pulsante per i 3 passi -->
+                <button class="final-button" onclick="window.location.href='adesione.html'">
+                    SCOPRI I 3 PASSI
+                </button>
+            </div>
+        </div>
+        
+        <div class="rosso"></div>
+    </div>
+</body>
+</html>
